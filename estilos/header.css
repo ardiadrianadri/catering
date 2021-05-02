@@ -93,3 +93,63 @@
 .desktop {
   display: none;
 }
+
+.nav-menu.desktop {
+  width: 100%;
+  background-color: white;
+  padding-top: 10px;
+  height: 35px;
+}
+
+.desktop-options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.desktop-option {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.option-link-desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  padding: 0px 10px;
+}
+
+.option-link-desktop:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: var(--border-round);
+}
+
+.option-link-desktop:focus {
+  border-radius: var(--border-round);
+  outline: none;
+  box-shadow: var(--menu-focus-secondary);
+}
+
+@media(min-width: 900px) {
+  .header.desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+}

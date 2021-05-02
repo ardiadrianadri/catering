@@ -23,6 +23,7 @@
   align-items: center;
   height: 420px;
   border: var(--button-focus-border);
+  border-radius: var(--border-round);
 }
 
 .article-card {
@@ -72,7 +73,7 @@
   .main-body {
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .articles-section {
