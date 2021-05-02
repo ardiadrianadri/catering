@@ -19,11 +19,16 @@
     }
   }
 
-  document.addEventListener('click', closeMenu);
-  menuButton.addEventListener('click', clickOnMenu);
-  menuButton.addEventListener('keyup', (event) => {
+  function enterOnMenu(event) {
     if (event.key === 'Enter') {
       clickOnMenu();
     }
-  });
+  }
+
+  document.removeEventListener('click', closeMenu)
+  document.addEventListener('click', closeMenu);
+  menuButton.removeEventListener('click', clickOnMenu);
+  menuButton.addEventListener('click', clickOnMenu);
+  menuButton.removeEventListener('keyup', enterOnMenu);
+  menuButton.addEventListener('keyup', enterOnMenu);
 })()
