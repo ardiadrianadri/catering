@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="estilos/formulario.css" />
+	<link rel="icon" type="image/png" href="./favicon.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<title>Actividad 1</title>
+	<link rel="stylesheet" type="text/css" href="./estilos/formulario.css">
+</head>
+<body>
+	<section>
+		<form action="" method="POST" enctype="multipart/form-data" target="_blank" class="formulario-contacto">
+			<h2 class="titulo-formulario">
+				FORMULARIO DE CONTACTO
+			</h2>
+			<camposet class="seccion-formulario">
+				<legend class="titulo-seccion">Datos personales</legend>
+				<label class="titulo-input" for="tipodocumento">Tipo de documento:</label>
+				<select class="campo menu" name="tipodocumento" id="tipodocumento" autofocus>
+					<option value="" disabled selected>Elige una opción:</option>
+					<option value="dni">DNI</option>
+					<option value="pasaporte">Pasaporte</option>
+					<option value="nie">NIE</option>
+					<option value="conducir">Carné de conducir</option>
+				</select>
+				<label class="titulo-input" for="numerodocumento">Número de documento:</label>
+				<input class="campo" type="text" name="numerodocumento" id="numerodocumento" maxlength="10"/>
+				<label class="titulo-input" for="nombre">
+					<!-- ????? -->
+					<span>Nombre:</span>
+					<span class="obligatorio"><abbr title="obligatorio">*</abbr></span> 
+				</label>
+				<input class="campo" type="text" name="nombre" id="nombre" obligatorio/>
+
+				<label class="titulo-input" for="apellidos">
+					<span>Apellidos:</span>
+					<span class="obligatorio"><abbr title="obligatorio">*</abbr></span>
+				</label>
+				<input class="campo" type="text" name="apellidos" id="apellidos" obligatorio/>
+				<label class="titulo-input" for="edad">Edad:</label>
+				<select class="campo menu" name="edad" id="edad">
+					<option value="" disabled selected>Elige una opción:</option>
+					<option value="menor">Menor de 18</option>
+					<option value="19-30">Entre 19 y 30</option>
+					<option value="31-50">Entre 31 y 50</option>
+					<option value="51-65">Entre 51 y 65</option>
+					<option value="mayor de 65">Mayor de 65</option>
+				</select>
+			</camposet>
+			<camposet  class="seccion-formulario">
+				<legend class="titulo-seccion">Datos de contacto</legend>
+				<label class="titulo-input" for="email">
+					<span>Email:</span>
+					<span class="obligatorio"><abbr title="obligatorio">*</abbr></span>
+				</label>
+				<input class="campo" type="email" name="email" id="email" obligatorio/>
+				<label class="titulo-input" for="telefono">Teléfono:</label>
+				<input class="campo" type="tel" name="telefono" id="telefono">
+			</camposet>
+			<camposet  class="seccion-formulario">
+				<legend class="titulo-seccion">Documentación</legend>
+				<div class="form-type-doc">
+					<h4 class="titulo-radio">Tipo de documentación:</h4 class="titulo-radio">
+					<div class="grupo-radio">
+						<input class="campo radio" type="radio" id="copiaDNI" name="documentacion" value="copiaDNI"/>
+						<label class="titulo-input" for="copiaDNI">Copia del DNI</label>
+					</div>
+					<div class="grupo-radio">
+						<input class="campo radio" type="radio" id="fotografia" name="documentacion" value="fotografia"/>
+						<label class="titulo-input" for="fotografia">Fotografía</label>
+					</div>
+					<div class="grupo-radio">
+						<input class="campo radio" type="radio" id="justificantepago" name="documentacion" value="justificantepago"/>
+						<label class="titulo-input" for="justificantepago">Justificante de pago</label>
+					</div>	
+				</div>
+				<label class="titulo-input" for="fichero">Elige los archivos: </label>
+				<input class="campo file" type="file" id="fichero" name="fichero" multiple/>
+				<p>
+					Para seleccionar varios ficheros, pulsda CTRL al seleccionar.
+				</p>
+			</camposet>
+			<camposet  class="seccion-formulario">
+				<legend class="titulo-seccion">Motivo de contacto</legend>
+				<div class="grupo-radio">
+					<input class="campo radio" type="radio" id="queja" name="motivocontacto" value="queja">
+					<label class="titulo-input" for="queja">Poner una queja</label>
+				</div>
+				<div class="grupo-radio">
+					<input class="campo radio" type="radio" id="sugerencia" name="motivocontacto" value="sugerencia">
+					<label class="titulo-input" for="sugerencia">Hacer una sugerencia</label>
+				</div>
+				<br/>
+				<label class="titulo-input" for="comentarios">Indica aquí la información que consideres relevante:</label>
+				<textarea class="campo area" name="comentarios" id="comentarios" cols="30" rows="5">Haz aquí tus comentarios</textarea>
+			</camposet>
+			<div class="pie-formulario">
+				<div class="permisos-formulario">
+					<div class="grupo-radio">
+						<input class="campo checkbox" type="checkbox" id="privacidad" value="privacidad" obligatorio>
+						<label class="titulo-input" for="privacidad">Acepto las condiciones de privacidad y os cedo mi alma.</label>
+					</div>
+					<div class="grupo-radio">
+						<input class="campo checkbox" type="checkbox" id="publicidad" value="publicidad">
+						<label class="titulo-input" for="publicidad">Acepto recibir publicidad y demás chorradas que me queráis enviar.</label>
+					</div>
+				</div>
+				<div class="boton-formulario">
+					<button class="btn" type="reset">Reset</button>
+					<button class="btn primario" type="submit">Accept</button>
+				</div>
+			</div>
+		</form>
+	</section>	
+</body>
+</html>
+
+
