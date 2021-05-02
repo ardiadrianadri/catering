@@ -1,0 +1,33 @@
+:root {
+  --primary-color: #772b80;
+  --secondary-color: #88d47f;
+  --neutral-color: #a0a7a0;
+  --font-family: "Poppins", sans-serif;
+  --font-size-huge: 42px;
+  --font-size-big: 36px;
+  --font-size-normal: 24px;
+  --font-size-small: 16px;
+  --font-size-little: 12px;
+  --border-round: 5px;
+  --font-important: bold;
+  --font-relevant: 800;
+  --font-normal: 500;
+  --border-style: solid;
+  --section-min-width: 300px;
+  --campo-height: 25px;
+  --campo-menu-height: 35px;
+  --campo-focus-border: solid 2px var(--primary-color);
+  --radio-size: 15px;
+  --checkbox-size: 30px;
+  --button-height: 30px;
+  --button-width: 80px;
+  --button-focus-border: solid 3px var(--primary-color);
+  --button-focus-primary: solid 3px var(--secondary-color);
+  --menu-focus-primary: 0 0 0 2px var(--secondary-color);
+  --menu-focus-secondary: 0 0 0 2px var(--primary-color);
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0px;
+}

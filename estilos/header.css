@@ -1,0 +1,95 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 85px;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+.header-title {
+  font-size: var(--font-size-big);
+  color: var(--secondary-color);
+  margin-left: 10px;
+}
+
+.material-icons.menu-icon {
+  margin-right: 10px;
+  font-size: var(--font-size-huge);
+  color: var(--secondary-color);
+}
+
+.material-icons.menu-icon:focus {
+  outline: none;
+  border-radius: var(--border-round);
+  box-shadow: var(--menu-focus-primary);
+}
+
+@keyframes fadeInMenu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.menu-options {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 100;
+  width: 220px;
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+  right: 5px;
+  list-style: none;
+  font-size: var(--font-size-small);
+  padding: 12px;
+  border-radius: var(--border-round);
+  box-shadow: 1px 1px 4px 1px black;
+}
+
+
+.menu-options.open {
+  display: block;
+  opacity: 1;
+  animation-name: fadeInMenu;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
+.option {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid black;
+}
+
+.option.last {
+  border-bottom: none;
+}
+
+.option-link {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.option-link:focus {
+  border-radius: var(--border-round);
+  outline: none;
+  box-shadow: var(--menu-focus-secondary);
+}
+
+.desktop {
+  display: none;
+}
