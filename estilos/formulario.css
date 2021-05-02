@@ -1,7 +1,7 @@
 
 
 .formulario-contacto {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,14 +9,14 @@
 }
 
 .seccion-formulario {
-  /*min-width: var(--section-min-width);*/
   width: 90%;
-  margin-top: 10px;
+  margin-top: 30px;
   border-radius: var(--border-round);
-  border-color: var(--primary-color);
+  border: var(--button-focus-border);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 15px;
   align-items: flex-start;
 }
 

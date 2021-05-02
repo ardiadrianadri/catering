@@ -7,16 +7,73 @@
 	<link rel="stylesheet" type="text/css" href="estilos/formulario.css" />
 	<link rel="icon" type="image/png" href="./favicon.png">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="estilos/main.css">
+  <link rel="stylesheet" href="estilos/header.css">
+  <link rel="stylesheet" href="estilos/formulario.css">
+  <link rel="stylesheet" href="estilos/footer.css">
 	<title>Actividad 1</title>
 	<link rel="stylesheet" type="text/css" href="./estilos/formulario.css">
 </head>
 <body>
+	<header class="header mobile">
+    <span class="header-title">
+      Catering
+    </span>
+    <nav class="nav-menu mobile">
+      <span class="material-icons menu-icon" tabindex="0">menu</span>
+      <ul class="menu-options">
+        <li class="option">
+          <a href="index.html" class="option-link">
+            <span class="material-icons">home</span>&nbsp;
+            Inicio
+          </a>
+        </li>
+        <li class="option">
+          <a href="whoarewe.html" class="option-link">
+            <span class="material-icons">groups</span>&nbsp;
+            ¿Quienes somos?
+          </a>
+        </li>
+        <li class="option last">
+          <a href="contact.html" class="option-link">
+            <span class="material-icons">contact_mail</span> &nbsp;
+            Formulario de contacto
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+	<header class="header desktop">
+    <div class="header-title">
+      Catering
+    </div>
+  </header>
+	<nav class="nav-menu desktop">
+    <ul class="desktop-options">
+      <li class="desktop-option">
+        <a href="index.html" class="option-link-desktop">
+          <span class="material-icons">home</span>&nbsp;
+          Inicio
+        </a>
+      </li>
+      <li class="desktop-option">
+        <a href="whoarewe.html" class="option-link-desktop">
+          <span class="material-icons">groups</span>&nbsp;
+          ¿Quienes somos?
+        </a>
+      </li>
+      <li class="desktop-option">
+        <a href="contact.html" class="option-link-desktop">
+          <span class="material-icons">contact_mail</span> &nbsp;
+          Formulario de contacto
+        </a>
+      </li>
+    </ul>
+  </nav>
 	<section>
 		<form action="" method="POST" enctype="multipart/form-data" target="_blank" class="formulario-contacto">
-			<h2 class="titulo-formulario">
-				FORMULARIO DE CONTACTO
-			</h2>
 			<camposet class="seccion-formulario">
 				<legend class="titulo-seccion">Datos personales</legend>
 				<label class="titulo-input" for="tipodocumento">Tipo de documento:</label>
@@ -115,8 +172,44 @@
 				</div>
 			</div>
 		</form>
-	</section>	
+	</section>
+	<footer class="footer">
+    <div class="author-card">
+      <div class="author-name">
+        <h4>Author</h4>
+      </div>
+      <div class="author-contact">
+        <ul class="list-contacts">
+          <li class="contact-info"><img class="contact-icon twitter" src="assets/twitter.png">@blablabla</li>
+          <li class="contact-info"><img class="contact-icon linkedin" src="assets/llinkedin.png">blablabla</li>
+        </ul>
+      </div>
+    </div>
+    <div class="author-card">
+      <div class="author-name">
+        <h4>Author</h4>
+      </div>
+      <div class="author-contact">
+        <ul class="list-contacts">
+          <li class="contact-info"><img class="contact-icon twitter" src="assets/twitter.png">@blablabla</li>
+          <li class="contact-info"><img class="contact-icon linkedin" src="assets/llinkedin.png">blablabla</li>
+        </ul>
+      </div>
+    </div>
+    <div class="author-card">
+      <div class="author-name">
+        <h4>Author</h4>
+      </div>
+      <div class="author-contact">
+        <ul class="list-contacts">
+          <li class="contact-info"><img class="contact-icon twitter" src="assets/twitter.png">@blablabla</li>
+          <li class="contact-info"><img class="contact-icon linkedin" src="assets/llinkedin.png">blablabla</li>
+        </ul>
+      </div>
+    </div>
+  </footer>	
 </body>
+<script src="scripts/header.js"></script>
 </html>
 
 
