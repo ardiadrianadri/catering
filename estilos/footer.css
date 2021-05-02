@@ -1,0 +1,25 @@
+.footer {
+  width: 100;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.twitter {
+  width: 40px;
+}
+
+.linkedin {
+  width: 30px;
+}
