@@ -3,9 +3,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  margin-bottom: 30px;
 }
 
 .main-image {
+  width: 100%;
+}
+
+.articles-section {
   width: 100%;
 }
 
@@ -57,4 +62,32 @@
   width: 100%;
   height: 350px;
   overflow: hidden;
+}
+
+.text-presentation {
+  padding: 0px 10px;
+}
+
+@media(min-width: 900px) {
+  .main-body {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .articles-section {
+    padding: 0px 20px;
+  }
+
+  .articles {
+    width: 400px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-direction: column;
+  }
+
+  .article-card {
+    margin-bottom: 10px;
+  }
 }
